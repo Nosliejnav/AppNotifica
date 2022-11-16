@@ -15,9 +15,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LogoLounchScrren" translatesAutoresizingMaskIntoConstraints="NO" id="3Wi-6w-ntd">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LogoLounchScrren" highlightedImage="LogoLounchScrren" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Wi-6w-ntd">
                                 <rect key="frame" x="50" y="270" width="290" height="156"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NotIFica" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qi8-40-fc6">
                                 <rect key="frame" x="102" y="489" width="186" height="68"/>
@@ -28,7 +29,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.36862745098039218" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.43330362439999998" green="0.63121187690000002" blue="0.6352976561" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -37,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LogoLounchScrren" width="74.5" height="76.5"/>
+        <image name="LogoLounchScrren" width="149" height="153"/>
     </resources>
 </document>
