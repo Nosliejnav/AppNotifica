@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D8810172926672800729505 /* UIcolor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8810162926672700729505 /* UIcolor+.swift */; };
+		1D88101A292671B000729505 /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D881019292671B000729505 /* ButtonDefault.swift */; };
+		1D88101C2926785600729505 /* ImageDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D88101B2926785400729505 /* ImageDefault.swift */; };
+		1D88101E2926789000729505 /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D88101D2926789000729505 /* LabelDefault.swift */; };
+		1D881020292678B700729505 /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D88101F292678B700729505 /* TextFieldDefault.swift */; };
 		41239E8B28F840EA00D92C31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41239E8A28F840EA00D92C31 /* AppDelegate.swift */; };
 		41239E8D28F840EA00D92C31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41239E8C28F840EA00D92C31 /* SceneDelegate.swift */; };
 		41239E8F28F840EA00D92C31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41239E8E28F840EA00D92C31 /* ViewController.swift */; };
@@ -41,6 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D8810162926672700729505 /* UIcolor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIcolor+.swift"; path = "../../../../../../Documents/UIcolor+.swift"; sourceTree = "<group>"; };
+		1D881019292671B000729505 /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
+		1D88101B2926785400729505 /* ImageDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDefault.swift; sourceTree = "<group>"; };
+		1D88101D2926789000729505 /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
+		1D88101F292678B700729505 /* TextFieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
 		41239E8728F840EA00D92C31 /* AppNotifica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppNotifica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41239E8A28F840EA00D92C31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41239E8C28F840EA00D92C31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +96,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D881015292666CF00729505 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1D8810162926672700729505 /* UIcolor+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1D881018292670BB00729505 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				1D881019292671B000729505 /* ButtonDefault.swift */,
+				1D88101F292678B700729505 /* TextFieldDefault.swift */,
+				1D88101B2926785400729505 /* ImageDefault.swift */,
+				1D88101D2926789000729505 /* LabelDefault.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
 		41239E7E28F840EA00D92C31 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +165,8 @@
 		415DFB4628FD5FCE00D249D1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				1D881018292670BB00729505 /* Infrastructure */,
+				1D881015292666CF00729505 /* Extensions */,
 				415DFB4828FD603E00D249D1 /* Controller */,
 				415DFB4B28FD604000D249D1 /* Coordinator */,
 			);
@@ -307,11 +338,16 @@
 			files = (
 				415DFB5128FD604000D249D1 /* Coordinator.swift in Sources */,
 				415DFB4F28FD604000D249D1 /* LoginViewController.swift in Sources */,
+				1D88101E2926789000729505 /* LabelDefault.swift in Sources */,
+				1D881020292678B700729505 /* TextFieldDefault.swift in Sources */,
 				41239E8F28F840EA00D92C31 /* ViewController.swift in Sources */,
 				415DFB5028FD604000D249D1 /* LoginCoordinator.swift in Sources */,
 				41239E8B28F840EA00D92C31 /* AppDelegate.swift in Sources */,
 				41239E9528F840EB00D92C31 /* AppNotifica.xcdatamodeld in Sources */,
 				415DFB4E28FD604000D249D1 /* LoginView.swift in Sources */,
+				1D88101C2926785600729505 /* ImageDefault.swift in Sources */,
+				1D88101A292671B000729505 /* ButtonDefault.swift in Sources */,
+				1D8810172926672800729505 /* UIcolor+.swift in Sources */,
 				41239E8D28F840EA00D92C31 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
