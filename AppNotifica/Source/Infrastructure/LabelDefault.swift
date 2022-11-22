@@ -15,8 +15,6 @@ class LabelDefault : UILabel{
         initDefault(text: text, font: font)
     }
     
-   
-    
     private func initDefault(text: String, font: UIFont){
         self.text = text
         self.textColor = .textLabelColor

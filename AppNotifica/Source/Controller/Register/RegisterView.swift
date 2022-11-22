@@ -19,7 +19,6 @@ class RegisterView: UIView {
             
         }
     
-       
 
     //cria a função com as propriadades da label no login
     var imageLabel = LabelDefault(text: "Entre com seu email e sua senha para se registrar", font: UIFont.systemFont(ofSize: 27, weight: .regular))
@@ -40,8 +39,6 @@ class RegisterView: UIView {
     //cria a função com as propriadades da butao no logor
     var buttonLogar = ButtonDefault(botao: "LOGAR")
     
-   
-        
     
     func setupVisualElements() {
         
@@ -102,3 +99,4 @@ class RegisterView: UIView {
     }
     
 }
+
