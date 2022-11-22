@@ -19,25 +19,23 @@ class LoginView: UIView {
             
         }
     //cria a função com as propriadades da imagem no login
-    var imageLogin = ImageDefault (image: "ImageLogin")
-
-    
+    var imageLogin = ImageDefault(image: "ImageLogin")
+       
     //cria a função com as propriadades da label no login
-    var imageLabel = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF")
-
+    var imageLabel = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF", font: UIFont.systemFont(ofSize: 17, weight: .regular))
+    
     //cria a função com as propriadades da text no login
     var emailTextField = TextFieldDefault (placeholder: "E-mail")
     
     //cria a função com as propriadades da text no login
     var senhaTextField = TextFieldDefault (placeholder: "Senha")
-
+    
     //cria a função com as propriadades da butao no logor
     var buttonLogar = ButtonDefault(botao: "LOGAR")
-  
     
     //cria a função com as propriadades do botão registrar
     var buttonRegistrar = ButtonDefault(botao: "REGISTRAR")
-
+        
     
     func setupVisualElements() {
         self.addSubview(imageLogin)
@@ -92,5 +90,3 @@ class LoginView: UIView {
     }
     
 }
-
-//add ooo7

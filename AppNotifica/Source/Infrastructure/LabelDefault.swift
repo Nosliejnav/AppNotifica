@@ -2,29 +2,33 @@
 //  LabelDefault.swift
 //  AppNotifica
 //
-//  Created by IFB BIOTIC 05 on 17/11/22.
+//  Created by Dario Pintor on 19/10/22.
 //
 
 import Foundation
 import UIKit
 
-class LabelDefault: UILabel{
+class LabelDefault : UILabel{
     
-    init(text: String) {
+    init(text: String, font: UIFont){
         super.init(frame: .zero)
-        initDefault(text: text)
+        initDefault(text: text, font: font)
     }
     
-    private func initDefault(text: String){
+   
+    
+    private func initDefault(text: String, font: UIFont){
         self.text = text
         self.textColor = .textLabelColor
-        self.font = UIFont(name: "SFProDisplay-Light", size: 17)
+        self.font = font
+        self.adjustsFontSizeToFitWidth = true
+        self.numberOfLines = 0;
         self.translatesAutoresizingMaskIntoConstraints = false
+        //UIFont(name: "SFProDisplay-Light", size: 80)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
         
     }
-    
-    required init?(coder: NSCoder){
-        fatalError("init(coder:) has not been implemented")
-    }
-    
 }
