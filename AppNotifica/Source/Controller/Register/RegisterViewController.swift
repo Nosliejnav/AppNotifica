@@ -11,6 +11,7 @@ import Foundation
 import UIKit
 
 class RegisterViewController: UIViewController {
+   
     //cria uma variável que é do tipo LoginView
     var viewMain = RegisterView()
     
