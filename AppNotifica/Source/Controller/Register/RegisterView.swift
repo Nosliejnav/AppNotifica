@@ -19,11 +19,9 @@ class RegisterView: UIView {
             
         }
     
+    //MARK: - Clouseres
+    var onLoginTap: (()->Void)?
      
-    //MARK: - Initialize
-    var onLoginTap: (() -> Void)?
-    
-     //MARK: - Properties
     //cria a função com as propriadades da label no login
     var imageLabel = LabelDefault(text: "Entre com seu email e sua senha para se registrar", font: UIFont.systemFont(ofSize: 27, weight: .regular))
     
@@ -55,6 +53,7 @@ class RegisterView: UIView {
         self.addSubview(buttonLogar)
         
         buttonLogar.addTarget(self, action: #selector(loginTap), for: .touchUpInside)
+        
         
         NSLayoutConstraint.activate([
         
@@ -109,9 +108,6 @@ class RegisterView: UIView {
     private func loginTap(){
         onLoginTap?()
     }
-    
-    
-
     
     
 }
