@@ -10,6 +10,7 @@ import Foundation
 
 import Foundation
 import UIKit
+
 class RegisterCoordinator: Coordinator {
     
     //faço com que todas as telas que usarem o LoginCoordinator impremente
@@ -25,6 +26,15 @@ class RegisterCoordinator: Coordinator {
       func start() {
         let viewController = RegisterViewController()
             self.navigationController.pushViewController(viewController, animated: true)
-
+          
+          viewController.onLoginTap = {
+              self.gotoLogin()
+          }
+          
+    }
+    
+    func gotoLogin(){
+        let coordinator = LoginCoordinator(navigationController: navigationController)
+        coordinator.start()
     }
 }
