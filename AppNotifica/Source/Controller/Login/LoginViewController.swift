@@ -14,7 +14,6 @@ class LoginViewController: ViewControllerDefault {
     var onRegisterTap: (() -> Void)?
     var onLoginTap: (() -> Void)?
     
-    
     //cria uma variável que é do
     
     lazy var loginView: LoginView = {
@@ -43,5 +42,3 @@ class LoginViewController: ViewControllerDefault {
        }
 
 }
-
-
