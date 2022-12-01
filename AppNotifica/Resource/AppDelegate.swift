@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  AppNotifica
 //
-//  Created by IFB BIOTIC 05 on 03/11/22.
+//  Created by Dario Pintor on 13/10/22.
 //
 
 import UIKit
@@ -10,8 +10,6 @@ import CoreData
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
