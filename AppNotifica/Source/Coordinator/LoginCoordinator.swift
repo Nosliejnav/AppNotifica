@@ -9,8 +9,7 @@ import Foundation
 import UIKit
 class LoginCoordinator: Coordinator {
     
-    //faço com que todas as telas que usarem o LoginCoordinator impremente
-    //o navigation controller. Senão todos todas as vezes teria que instãnciá-lo
+    //faço com que todas as telas que usarem o LoginCoordinator implementem o navigation controller. Senão todos todas as vezes teria que instãnciá-lo
     var navigationController: UINavigationController
     
     //cria um construtor para incializar meu navationCrontroller
@@ -41,7 +40,7 @@ class LoginCoordinator: Coordinator {
     }
         //função que chama a registerView
         func  gotoLogin() {
-           let coordinator = HomeCoordinator(navigationController: navigationController)
+           let coordinator = TabbarCoordinator(navigationController: navigationController)
             coordinator.start()
         }
 }

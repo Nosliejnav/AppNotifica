@@ -15,16 +15,16 @@ class LoginView: ViewDefault {
   var onRegisterTap: (() -> Void)?
   var onLoginTap: (() -> Void)?
     
-    //cria a função com as propriadades da imagem no login
+    //cria a variável com as propriadades da imagem no login
     var imageLogin = ImageDefault(image: "ImageLogin")
        
-    //cria a função com as propriadades da label no login
+    //cria a variável com as propriadades da label no login
     var imageLabel = LabelDefault(text: "Registre e gerencie as ocorrências do seu IF", font: UIFont.systemFont(ofSize: 17, weight: .regular))
     
-    //cria a função com as propriadades da text no login
+    //cria a variável com as propriadades da text no login
     var emailTextField = TextFieldDefault (placeholder: "E-mail", keyBordType: .emailAddress, returnKeyType: .next)
     
-    //cria a função com as propriadades da text no login
+    //cria a variável com as propriadades da text no login
     var senhaTextField : TextFieldDefault  = {
         let text = TextFieldDefault(placeholder: "Senha", keyBordType: .emailAddress, returnKeyType: .done)
         
@@ -33,17 +33,19 @@ class LoginView: ViewDefault {
         return text
          }()
     
-    //cria a função com as propriadades da butao no logor
+    //cria a variável com as propriadades da butao no logor
     var buttonLogar = ButtonDefault(botao: "LOGAR")
     
-    //cria a função com as propriadades do botão registrar
+    //cria a variável com as propriadades do botão registrar
     var buttonRegistrar = ButtonDefault(botao: "REGISTRAR")
         
-    
+    //organiza meus componentes na tela
     override func setupVisualElements() {
         super.setupVisualElements()
         emailTextField.delegate = self
         senhaTextField.delegate = self
+        
+        //adiciona os componentes como subview da view atual
         self.addSubview(imageLogin)
         self.addSubview(imageLabel)
         self.addSubview(emailTextField)
@@ -55,6 +57,7 @@ class LoginView: ViewDefault {
         
         buttonLogar.addTarget(self, action: #selector(loginTap), for: .touchUpInside)
         
+        //configura a disposição dos elementos na view atual
         NSLayoutConstraint.activate([
         
             imageLogin.widthAnchor.constraint(equalToConstant: 274.99),
@@ -107,21 +110,18 @@ class LoginView: ViewDefault {
     }
 }
 
-//
 extension LoginView: UITextFieldDelegate {
   
-    //esconde o teclado quando o botão próximo é acionado e foca no proximo campo
+    //configura o botão seguinte do teclado
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-       
-        //quando estiverna campo de email, ao clicar no botao seguinte vai para o campo senha
-        if textField == emailTextField {
-            //
-            self.senhaTextField.becomeFirstResponder()
-        } else {
-            //se náo for o campo senha esconde o teclado
-            textField.resignFirstResponder()
-        }
         
+        if textField == emailTextField {
+            self.senhaTextField.becomeFirstResponder()
+        
+    } else {
+        textField.resignFirstResponder()
+    }
+
         return true
     }
 }

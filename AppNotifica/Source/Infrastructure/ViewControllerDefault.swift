@@ -9,9 +9,6 @@ import Foundation
 import UIKit
 
 class ViewControllerDefault: ViewController {
-    
-    
-    
     // é executado quando está carregando
     override func viewDidLoad() {
         super.viewDidLoad()

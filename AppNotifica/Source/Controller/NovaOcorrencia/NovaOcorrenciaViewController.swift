@@ -1,5 +1,5 @@
 //
-//  SobreViewController.swift
+//  NovaOcorrenciaViewController.swift
 //  AppNotifica
 //
 //  Created by Dario Pintor on 25/10/22.
@@ -8,26 +8,26 @@
 import Foundation
 import UIKit
 
-class SobreViewController: ViewControllerDefault {
+class NovaOcorrenciaViewController: ViewControllerDefault {
     
     //MARK: -  Clouseres
     
     //cria uma variável que é do
     
-    lazy var sobreView: SobreView = {
-        let sobreView = SobreView()
+    lazy var novaOcorrenciaView: NovaOcorrenciaView = {
+        let novaOcorrenciaView = NovaOcorrenciaView()
         
         
-        return sobreView
+        return novaOcorrenciaView
     }()
     
     override func loadView(){
-        self.view = sobreView
+        self.view = novaOcorrenciaView
     }
     
     // é executado quando está carregando
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Sobre"
+        self.title = "Nova Ocorrência"
     }
 }

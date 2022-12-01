@@ -18,7 +18,7 @@ class TextFieldDefault: UITextField{
         
       }
     
-    //construtore recebendo a string + o tipo do teclado e o tipo do retorno
+    //construtor recebendo a string + o tipo do teclado e o tipo do retorno
     init(placeholder: String, keyBordType: UIKeyboardType, returnKeyType: UIReturnKeyType ) {
           super.init(frame: .zero)
           

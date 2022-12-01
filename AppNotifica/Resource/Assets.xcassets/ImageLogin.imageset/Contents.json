@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "Captura de Tela 2022-10-18 às 09.24.30.png",
+      "filename" : "ImageLogin.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Captura de Tela 2022-10-18 às 09.24.30.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -17,5 +18,9 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "localizable" : true,
+    "template-rendering-intent" : "original"
   }
 }

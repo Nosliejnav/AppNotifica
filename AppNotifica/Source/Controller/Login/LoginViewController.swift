@@ -32,7 +32,9 @@ class LoginViewController: ViewControllerDefault {
        override func loadView(){
            self.view = loginView
        }
-              override func viewDidLoad() {
+       
+    // é executado quando está carregando
+       override func viewDidLoad() {
            super.viewDidLoad()
         self.title = "Logar"
     
