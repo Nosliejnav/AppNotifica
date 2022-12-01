@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-
 class HomeView: ViewDefault {
     //MARK: - Closures
     
@@ -16,8 +15,9 @@ class HomeView: ViewDefault {
     //MARK: - Inits
     
     
-     override func setupVisualElements() {
-         super.setupVisualElements()
+    
+   override  func setupVisualElements() {
+
     }
     
 }

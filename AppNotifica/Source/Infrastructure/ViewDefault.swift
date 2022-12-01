@@ -2,13 +2,13 @@
 //  ViewDefault.swift
 //  AppNotifica
 //
-//  Created by IFB BIOTIC 05 on 29/11/22.
+//  Created by Dario Pintor on 22/10/22.
 //
 
 import Foundation
 import UIKit
-
 class ViewDefault: UIView {
+    
     //MARK: - Initialize
         override init(frame: CGRect) {
             //chama o frame da superclasse
@@ -19,8 +19,8 @@ class ViewDefault: UIView {
             
         }
     
-    func setupVisualElements(){
-
+    func setupVisualElements() {
+        
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

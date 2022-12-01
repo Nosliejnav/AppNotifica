@@ -8,9 +8,6 @@
 import Foundation
 import UIKit
 
-import Foundation
-import UIKit
-
 class TextFieldDefault: UITextField{
     
     //constrututor recebendo somente o placeholder
@@ -21,7 +18,7 @@ class TextFieldDefault: UITextField{
         
       }
     
-    //construtor recebendo a string + o tipo do teclado e o tipo do retorno
+    //construtore recebendo a string + o tipo do teclado e o tipo do retorno
     init(placeholder: String, keyBordType: UIKeyboardType, returnKeyType: UIReturnKeyType ) {
           super.init(frame: .zero)
           
@@ -42,5 +39,3 @@ class TextFieldDefault: UITextField{
         fatalError("init(coder:) has not been implemented")
     }
 }
-
-// add

@@ -6,14 +6,10 @@
 //
 
 import Foundation
-
-
-import Foundation
 import UIKit
 class RegisterCoordinator: Coordinator {
     
-    //faço com que todas as telas que usarem o LoginCoordinator impremente
-    //o navigation controller. Senão todos todas as vezes teria que instãnciá-lo
+    //faço com que todas as telas que usarem o LoginCoordinator implemente o navigation controller. Senão todos todas as vezes teria que instanciá-lo
     var navigationController: UINavigationController
     
     //cria um construtor para incializar meu navationCrontroller

@@ -20,22 +20,22 @@ class RegisterView: ViewDefault {
     var emailTextField = TextFieldDefault (placeholder: "E-mail", keyBordType: .emailAddress, returnKeyType: .next)
     
     //cria a função com as propriadades da text no login
-    var senhaTextField: TextFieldDefault = {
-        let text = TextFieldDefault (placeholder: "Senha", keyBordType: .emailAddress, returnKeyType: .done)
+    var senhaTextField : TextFieldDefault  = {
+        let text = TextFieldDefault(placeholder: "Senha", keyBordType: .emailAddress, returnKeyType: .next)
         
-        text.isSecureTextEntry = true
+        text.isSecureTextEntry = true;
         
         return text
-    }()
+         }()
     
     //cria a função com as propriadades da text no login
-    var confirmaSenhaTextField: TextFieldDefault  = {
-        let text = TextFieldDefault (placeholder: "Confirmar sua Senha", keyBordType: .emailAddress, returnKeyType: .done)
+    var confirmaSenhaTextField : TextFieldDefault  = {
+        let text = TextFieldDefault(placeholder: "Confirme sua Senha", keyBordType: .emailAddress, returnKeyType: .done)
         
-        text.isSecureTextEntry = true
+        text.isSecureTextEntry = true;
         
         return text
-    }()
+         }()
     
     //cria a função com as propriadades do botão registrar
     var buttonRegistrar = ButtonDefault(botao: "REGISTRAR")
@@ -48,6 +48,9 @@ class RegisterView: ViewDefault {
     
     override func setupVisualElements() {
         super.setupVisualElements()
+        emailTextField.delegate = self
+        senhaTextField.delegate = self
+        confirmaSenhaTextField.delegate = self
         
         self.addSubview(imageLabel)
         self.addSubview(emailTextField)
@@ -103,7 +106,6 @@ class RegisterView: ViewDefault {
         
         ])
     }
-
     
     //MARK: - Actions
     @objc
@@ -113,3 +115,24 @@ class RegisterView: ViewDefault {
     
     
 }
+
+extension RegisterView: UITextFieldDelegate {
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == emailTextField {
+            self.senhaTextField.becomeFirstResponder()
+            
+        } else if textField == senhaTextField {
+            self.confirmaSenhaTextField.becomeFirstResponder()
+            
+        } else {
+            textField.resignFirstResponder()
+        }
+        
+        return true
+        
+    }
+    
+}
+
