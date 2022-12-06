@@ -33,6 +33,7 @@
 		4177CC4A2902BB14001E2621 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177CC492902BB14001E2621 /* HomeCoordinator.swift */; };
 		4177CC5029030C54001E2621 /* ViewControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177CC4F29030C54001E2621 /* ViewControllerDefault.swift */; };
 		41994E2628FFFC37009591C4 /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41994E2528FFFC37009591C4 /* LabelDefault.swift */; };
+		41B2A29F293E27F9006AE1A8 /* EscolherImagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B2A29E293E27F9006AE1A8 /* EscolherImagem.swift */; };
 		41CEB5E729041FEE0070C628 /* ViewDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CEB5E629041FEE0070C628 /* ViewDefault.swift */; };
 		41CEB5EF2907DBB40070C628 /* TabbarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CEB5EE2907DBB40070C628 /* TabbarCoordinator.swift */; };
 		41CEB5F22907DE030070C628 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CEB5F12907DE030070C628 /* TabbarController.swift */; };
@@ -92,6 +93,7 @@
 		4177CC492902BB14001E2621 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		4177CC4F29030C54001E2621 /* ViewControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDefault.swift; sourceTree = "<group>"; };
 		41994E2528FFFC37009591C4 /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
+		41B2A29E293E27F9006AE1A8 /* EscolherImagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolherImagem.swift; sourceTree = "<group>"; };
 		41CEB5E629041FEE0070C628 /* ViewDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDefault.swift; sourceTree = "<group>"; };
 		41CEB5EE2907DBB40070C628 /* TabbarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarCoordinator.swift; sourceTree = "<group>"; };
 		41CEB5F12907DE030070C628 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 			children = (
 				41CEB5F52907E6EB0070C628 /* NovaOcorrenciaView.swift */,
 				41CEB5F72907E7090070C628 /* NovaOcorrenciaViewController.swift */,
+				41B2A29E293E27F9006AE1A8 /* EscolherImagem.swift */,
 			);
 			path = NovaOcorrencia;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				41CEB5F22907DE030070C628 /* TabbarController.swift in Sources */,
 				415DFB4F28FD604000D249D1 /* LoginViewController.swift in Sources */,
 				4177CC5029030C54001E2621 /* ViewControllerDefault.swift in Sources */,
+				41B2A29F293E27F9006AE1A8 /* EscolherImagem.swift in Sources */,
 				41239E8F28F840EA00D92C31 /* ViewController.swift in Sources */,
 				4177CC3F29013CB6001E2621 /* RegisterView.swift in Sources */,
 				415DFB5028FD604000D249D1 /* LoginCoordinator.swift in Sources */,
