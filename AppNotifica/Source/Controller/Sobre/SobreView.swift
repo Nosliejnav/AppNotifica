@@ -4,7 +4,6 @@
 //
 //  Created by Dario Pintor on 25/10/22.
 //
-
 import Foundation
 import UIKit
 
@@ -18,14 +17,12 @@ class SobreView: ViewDefault  /* {
     
     
    override  func setupVisualElements() {
-
     }
     
 }
 */
 {
 //MARK: -  Clouseres
-
     //cria a variável com as propriadades da imagem no login
     var imageLogin = ImageDefault(image: "ImageLogin")
 
